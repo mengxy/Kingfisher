@@ -25,6 +25,7 @@
 //  THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import "WebPImageSerialization.h"
 
 //! Project version number for Kingfisher.
 FOUNDATION_EXPORT double KingfisherVersionNumber;

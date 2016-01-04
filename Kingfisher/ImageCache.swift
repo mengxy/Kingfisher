@@ -190,6 +190,7 @@ public extension ImageCache {
                 case .PNG: data = UIImagePNGRepresentation(image)
                 case .JPEG: data = UIImageJPEGRepresentation(image, 1.0)
                 case .GIF: data = UIImageGIFRepresentation(image)
+                case .WEBP: data = UIImageWebPRepresentation(image)
                 case .Unknown: data = originalData ?? UIImagePNGRepresentation(image.kf_normalizedImage())
                 }
                 

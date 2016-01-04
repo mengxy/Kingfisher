@@ -32,16 +32,17 @@ private let pngHeader: [UInt8] = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A
 private let jpgHeaderSOI: [UInt8] = [0xFF, 0xD8]
 private let jpgHeaderIF: [UInt8] = [0xFF]
 private let gifHeader: [UInt8] = [0x47, 0x49, 0x46]
+private let webPHeader: [UInt8] = [87, 69, 66, 80]
 
 // MARK: - Image format
 enum ImageFormat {
-    case Unknown, PNG, JPEG, GIF
+    case Unknown, PNG, JPEG, GIF, WEBP
 }
 
 extension NSData {
     var kf_imageFormat: ImageFormat {
-        var buffer = [UInt8](count: 8, repeatedValue: 0)
-        self.getBytes(&buffer, length: 8)
+        var buffer = [UInt8](count: 12, repeatedValue: 0)
+        self.getBytes(&buffer, length: 12)
         if buffer == pngHeader {
             return .PNG
         } else if buffer[0] == jpgHeaderSOI[0] &&
@@ -54,6 +55,12 @@ extension NSData {
             buffer[2] == gifHeader[2]
         {
             return .GIF
+        } else if buffer[8] == webPHeader[0] &&
+            buffer[9] == webPHeader[1] &&
+            buffer[10] == webPHeader[2] &&
+            buffer[11] == webPHeader[3]
+        {
+            return .WEBP
         }
         
         return .Unknown
@@ -117,6 +124,7 @@ extension UIImage {
         case .JPEG: image = UIImage(data: data, scale: scale)
         case .PNG: image = UIImage(data: data, scale: scale)
         case .GIF: image = UIImage.kf_animatedImageWithGIFData(gifData: data, scale: scale, duration: 0.0)
+        case .WEBP: image = UIImage(data: data, scale: scale)
         case .Unknown: image = nil
         }
         return image
