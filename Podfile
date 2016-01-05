@@ -7,6 +7,7 @@ end
 
 target 'Kingfisher' do
 
+	pod 'libwebp'
 end
 
 target 'KingfisherTests' do

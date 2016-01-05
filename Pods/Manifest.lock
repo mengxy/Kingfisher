@@ -1,7 +1,32 @@
 PODS:
+  - libwebp (0.4.3):
+    - libwebp/core (= 0.4.3)
+    - libwebp/dec (= 0.4.3)
+    - libwebp/demux (= 0.4.3)
+    - libwebp/dsp (= 0.4.3)
+    - libwebp/enc (= 0.4.3)
+    - libwebp/mux (= 0.4.3)
+    - libwebp/utils (= 0.4.3)
+    - libwebp/webp (= 0.4.3)
+  - libwebp/core (0.4.3):
+    - libwebp/webp
+  - libwebp/dec (0.4.3):
+    - libwebp/core
+  - libwebp/demux (0.4.3):
+    - libwebp/core
+  - libwebp/dsp (0.4.3):
+    - libwebp/core
+  - libwebp/enc (0.4.3):
+    - libwebp/core
+  - libwebp/mux (0.4.3):
+    - libwebp/core
+  - libwebp/utils (0.4.3):
+    - libwebp/core
+  - libwebp/webp (0.4.3)
   - Nocilla (0.10.0)
 
 DEPENDENCIES:
+  - libwebp
   - Nocilla (from `https://github.com/pcantrell/Nocilla.git`, branch `delayed-response`)
 
 EXTERNAL SOURCES:
@@ -15,6 +40,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/pcantrell/Nocilla.git
 
 SPEC CHECKSUMS:
+  libwebp: 360ed8bc4ec8da413f07f84071e7f5a5c67a285d
   Nocilla: ae0a2b05f3087b473624ac2b25903695df51246a
 
 COCOAPODS: 0.39.0

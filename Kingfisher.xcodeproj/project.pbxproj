@@ -59,9 +59,9 @@
 		D1ED2D5E1AD2D0F900CFC3EB /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED2D581AD2D0F900CFC3EB /* ImageDownloader.swift */; };
 		D1ED2D5F1AD2D0F900CFC3EB /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED2D591AD2D0F900CFC3EB /* KingfisherManager.swift */; };
 		D1ED2D601AD2D0F900CFC3EB /* KingfisherOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED2D5A1AD2D0F900CFC3EB /* KingfisherOptions.swift */; };
+		D62B1B8C27AB069672AB31EB /* libPods-Kingfisher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB38BF599B3A6C6F89DCE0B /* libPods-Kingfisher.a */; };
 		FA41080E1C3A866B007B01AB /* WebPImageSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FA41080C1C3A866B007B01AB /* WebPImageSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA41080F1C3A866B007B01AB /* WebPImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FA41080D1C3A866B007B01AB /* WebPImageSerialization.m */; };
-		FA4108111C3A8701007B01AB /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4108101C3A8701007B01AB /* WebP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +131,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		255B2FAC971DAF18CC177D6C /* Pods-Kingfisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kingfisher.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kingfisher/Pods-Kingfisher.release.xcconfig"; sourceTree = "<group>"; };
+		3F9C86CE5134A6E283FD3323 /* Pods-Kingfisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kingfisher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kingfisher/Pods-Kingfisher.debug.xcconfig"; sourceTree = "<group>"; };
 		4B164ACE1B8D554200768EC6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4B2C4DF71B7D7ACD000912CA /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		4B3E714D1B01FEB200F5AAED /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
@@ -146,6 +148,7 @@
 		4BBA04C31AD7986100A5CF82 /* KingfisherTestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherTestHelper.swift; sourceTree = "<group>"; };
 		A8D69912DD16C2942EB1F40E /* Pods-KingfisherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingfisherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KingfisherTests/Pods-KingfisherTests.release.xcconfig"; sourceTree = "<group>"; };
 		A9E621E297FEFAD35D39C34E /* libPods-KingfisherTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KingfisherTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB38BF599B3A6C6F89DCE0B /* libPods-Kingfisher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kingfisher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11250C01BAC4B6300B986EF /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
 		D13F49C21BEDA53F00CE335D /* Kingfisher-tvOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kingfisher-tvOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13F49C41BEDA53F00CE335D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,7 +183,6 @@
 		D809C0611AAB7CA1AE240862 /* Pods-KingfisherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingfisherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KingfisherTests/Pods-KingfisherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA41080C1C3A866B007B01AB /* WebPImageSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPImageSerialization.h; sourceTree = "<group>"; };
 		FA41080D1C3A866B007B01AB /* WebPImageSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPImageSerialization.m; sourceTree = "<group>"; };
-		FA4108101C3A8701007B01AB /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Kingfisher/WebP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,8 +213,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4108111C3A8701007B01AB /* WebP.framework in Frameworks */,
 				4B164AD01B8D556900768EC6 /* CFNetwork.framework in Frameworks */,
+				D62B1B8C27AB069672AB31EB /* libPods-Kingfisher.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +235,8 @@
 			children = (
 				D809C0611AAB7CA1AE240862 /* Pods-KingfisherTests.debug.xcconfig */,
 				A8D69912DD16C2942EB1F40E /* Pods-KingfisherTests.release.xcconfig */,
+				3F9C86CE5134A6E283FD3323 /* Pods-Kingfisher.debug.xcconfig */,
+				255B2FAC971DAF18CC177D6C /* Pods-Kingfisher.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -364,10 +368,10 @@
 		EA99D30544BD22799F7A5367 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA4108101C3A8701007B01AB /* WebP.framework */,
 				4B164ACE1B8D554200768EC6 /* CFNetwork.framework */,
 				4B3E714D1B01FEB200F5AAED /* WatchKit.framework */,
 				A9E621E297FEFAD35D39C34E /* libPods-KingfisherTests.a */,
+				CDB38BF599B3A6C6F89DCE0B /* libPods-Kingfisher.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -456,11 +460,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1ED2D4E1AD2D09F00CFC3EB /* Build configuration list for PBXNativeTarget "Kingfisher" */;
 			buildPhases = (
+				CDAF31D0D409C1722812F615 /* Check Pods Manifest.lock */,
 				D1ED2D301AD2D09F00CFC3EB /* Sources */,
 				D1ED2D311AD2D09F00CFC3EB /* Frameworks */,
 				D1ED2D321AD2D09F00CFC3EB /* Headers */,
 				D1ED2D331AD2D09F00CFC3EB /* Resources */,
 				D1249CF91C12B01E002C62D8 /* ShellScript */,
+				B2795668572A611E7E8A3977 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -631,6 +637,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KingfisherTests/Pods-KingfisherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2795668572A611E7E8A3977 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kingfisher/Pods-Kingfisher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDAF31D0D409C1722812F615 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D1249CF91C12B01E002C62D8 /* ShellScript */ = {
@@ -968,6 +1004,7 @@
 		};
 		D1ED2D4F1AD2D09F00CFC3EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9C86CE5134A6E283FD3323 /* Pods-Kingfisher.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 397;
@@ -998,6 +1035,7 @@
 		};
 		D1ED2D501AD2D09F00CFC3EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 255B2FAC971DAF18CC177D6C /* Pods-Kingfisher.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 397;
