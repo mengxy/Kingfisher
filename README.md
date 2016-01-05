@@ -33,6 +33,8 @@ Kingfisher is a lightweight and pure Swift implemented library for downloading a
 * Options to decompress the image in background before rendering it, which could improve the UI performance.
 * Categories over `UIImageView` and `UIButton` for setting image from an URL directly.
 * Support GIF seamlessly. You could just download and set your GIF images as the same as you do for PNG/JPEG format.
+* Support WebP, thanks to [WebPImageSerialization](https://github.com/mattt/WebPImageSerialization) from [mattt](https://github.com/mattt)
+
 
 ## Requirements
 

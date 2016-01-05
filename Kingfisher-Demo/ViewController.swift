@@ -52,7 +52,7 @@ class ViewController: UICollectionViewController {
 
 extension ViewController {
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 11
     }
     
     override func collectionView(collectionView: UICollectionView, didEndDisplayingCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
@@ -67,7 +67,10 @@ extension ViewController {
         
         cell.cellImageView.kf_showIndicatorWhenLoading = true
         
-        let URL = NSURL(string: "https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/kingfisher-\(indexPath.row + 1).jpg")!
+        var URL = NSURL(string: "https://raw.githubusercontent.com/mengxy/Kingfisher/master/images/kingfisher-\(indexPath.row + 1).jpg")!
+        if indexPath.row == 10 {
+            URL = NSURL(string: "https://raw.githubusercontent.com/mengxy/Kingfisher/master/images/kingfisher-\(indexPath.row + 1).webp")!
+        }
         
         
         cell.cellImageView.kf_setImageWithURL(URL, placeholderImage: nil,

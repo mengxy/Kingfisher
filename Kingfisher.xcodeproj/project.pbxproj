@@ -480,6 +480,7 @@
 				D1ED2D3C1AD2D09F00CFC3EB /* Frameworks */,
 				D1ED2D3D1AD2D09F00CFC3EB /* Resources */,
 				5A0400F84A1FF7DBA809925E /* Copy Pods Resources */,
+				7E8EAA542F1363A483A3E825 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -615,6 +616,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KingfisherTests/Pods-KingfisherTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E8EAA542F1363A483A3E825 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KingfisherTests/Pods-KingfisherTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1249CF91C12B01E002C62D8 /* ShellScript */ = {
