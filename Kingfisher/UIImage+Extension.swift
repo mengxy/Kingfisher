@@ -43,7 +43,7 @@ extension NSData {
     var kf_imageFormat: ImageFormat {
         var buffer = [UInt8](count: 12, repeatedValue: 0)
         self.getBytes(&buffer, length: 12)
-        if buffer == pngHeader {
+        if Array(buffer[0..<8]) == pngHeader {
             return .PNG
         } else if buffer[0] == jpgHeaderSOI[0] &&
             buffer[1] == jpgHeaderSOI[1] &&
